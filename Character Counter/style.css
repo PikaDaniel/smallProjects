@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://media.istockphoto.com/id/1153268590/photo/e-mail-connection-background.jpg?s=612x612&w=0&k=20&c=Uat8Ks6EeVuwU9rH__VorafgilAxcx9lUewvt9LK04M=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: cursive;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  width: 85%;
+}
+
+.textarea {
+  resize: none;
+  width: 50%;
+  height: 3em;
+  font-size: medium;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border: solid 2px lightgray;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 1em;
+}
+
+.counter-container p {
+  color: rgb(233, 233, 233);
+}
+
+.total-counter {
+  color: rgb(0, 255, 13);
+  font-weight:700;
+  font-size: 1.2em;
+}
+
+.remaining-counter {
+  color: rgb(255, 60, 0);
+  font-weight:700;
+  font-size: 1.2em;
+}

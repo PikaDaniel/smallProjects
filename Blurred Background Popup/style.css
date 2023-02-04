@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    transition: filter 0.7s;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1em;
+    text-shadow: 0.1em 0.1em 0.15em black;
+}
+
+.btn {
+    padding: 0.7em 1em;
+    cursor: pointer;
+    width: 15em;
+    background: linear-gradient(217deg, rgba(255,0,0), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255), rgba(0,0,255,0) 70.71%);
+    border-radius: 20%;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.active.container {
+    filter: blur(0.2em) brightness(0.7);
+}
+
+.popup-container {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+h4 {
+    font-size: 2em;
+    margin: 0.2em 0;
+    font-family: sans-serif;
+    color: rgb(70, 207, 248);
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    color: rgb(70, 207, 248);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.popup-btn {
+    cursor: pointer;
+    background-color: orangered;
+    padding: 0.4em;
+    font-size: 1em;
+    border: 0.15em solid;
+}
+
+.input {
+    border: 0.15em solid;
+    padding: 0.5em;
+    margin: 0.5em 0em;
+    text-align: center;
+
+}
+
+.input::placeholder {
+    color: darkgray;
+}
+
+.close-icon {
+    position: absolute;
+    right: 1.4em;
+    top: 1.5em;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: orangered;
+}
+
+.active.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    top: 20%;
+}

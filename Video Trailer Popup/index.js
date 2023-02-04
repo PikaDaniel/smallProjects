@@ -1,0 +1,17 @@
+const btnEl = document.querySelector(".btn");
+const closeIconEl = document.querySelector(".close-icon");
+const trailerContainerEl = document.querySelector(".trailer-container");
+const videoEl = document.querySelector("video");
+const mainContainerEl = document.querySelector(".main-container");
+
+btnEl.addEventListener("click", ()=>{
+    trailerContainerEl.classList.remove("active");
+    mainContainerEl.classList.add("active");
+});
+
+closeIconEl.addEventListener("click", ()=>{
+    trailerContainerEl.classList.add("active");
+    mainContainerEl.classList.remove("active");
+    videoEl.pause();
+    videoEl.currentTime = 0;
+})

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-container {
+    background-image: url(https://images.unsplash.com/photo-1564648351416-3eec9f3e85de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmlsZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: black;
+    font-size: 3em;
+    font-family: cursive;
+    letter-spacing: 0.15em;
+}
+
+.text {
+    margin: 1.2em 3%;
+    font-family: cursive;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 0.5em 0.8em rgba(0, 0, 0, 0.5);
+    transition: background-color .4s;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 1em;
+    color: black;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    color: pink;
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a {
+    color:white;
+}
